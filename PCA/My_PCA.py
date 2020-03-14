@@ -70,7 +70,7 @@ class PCA(object):
         varience_radio = varience / varience_sum
         
         varience_contribution = 0
-        for R in xrange(self.dimension):
+        for R in range(self.dimension):
             varience_contribution += varience_radio[R]       #前R个方差贡献度之和
             if varience_contribution >= 0.99:
                 break
